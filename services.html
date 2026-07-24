@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Services — Ageta Samwel, Architect</title>
+<meta name="description" content="Custom home design, renovations, design consultation, and site feasibility — Ageta Samwel's architecture services across Kenya, tailored to any budget." />
+
+<!-- Open Graph + Twitter Card: controls how this page looks when
+     shared on Instagram/Facebook/WhatsApp/Twitter. og:image points
+     to a placeholder filename -- add a real 1200x630px image named
+     exactly "og-image.jpg" next to this HTML file once available. -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ageta Samwel — Architect" />
+<meta property="og:title" content="Services — Ageta Samwel, Architect" />
+<meta property="og:description" content="Custom home design, renovations, design consultation, and site feasibility — Ageta Samwel's architecture services across Kenya, tailored to any budget." />
+<meta property="og:url" content="https://www.agetasamwel.com/services.html" />
+<meta property="og:image" content="https://www.agetasamwel.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Services — Ageta Samwel, Architect" />
+<meta name="twitter:description" content="Custom home design, renovations, design consultation, and site feasibility — Ageta Samwel's architecture services across Kenya, tailored to any budget." />
+<meta name="twitter:image" content="https://www.agetasamwel.com/og-image.jpg" />
+
+<!-- Structured data (Schema.org), identical on every page so
+     search engines and social platforms have one consistent source
+     of truth about the business. PLACEHOLDER VALUES below (domain,
+     phone, email) match the placeholders used elsewhere on the site
+     -- replace with real ones once confirmed. Add a "sameAs" array
+     with real social media URLs once Ageta's handles are confirmed
+     (omitted for now rather than guessed). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Ageta Samwel — Architect",
+  "url": "https://www.agetasamwel.com/",
+  "telephone": "+254700000000",
+  "email": "hello@agetasamwel.com",
+  "description": "Ageta Samwel is a solo, hands-on architect designing homes across Kenya, guiding clients from first sketch to final key at any budget.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "areaServed": "Kenya",
+  "founder": {
+    "@type": "Person",
+    "name": "Ageta Samwel",
+    "jobTitle": "Architect"
+  }
+}
+</script>
+<!-- Font loading: preconnect starts the connection early, then
+     preload downloads the font CSS in parallel with everything else
+     rather than blocking on it. The onload swap applies it once
+     ready; <noscript> covers visitors with JavaScript disabled. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap"></noscript>
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-nav">
+    <a href="index.html" class="site-nav__logo">
+      <span class="site-nav__logo-mark">S.</span><span class="site-nav__logo-name">Ageta</span>
+    </a>
+
+    <ul class="site-nav__links">
+      <li><a href="index.html" class="site-nav__link">Home</a></li>
+      <li><a href="about.html" class="site-nav__link">About</a></li>
+      <li><a href="services.html" class="site-nav__link is-current">Services</a></li>
+      <li><a href="portfolio.html" class="site-nav__link">Portfolio</a></li>
+      <li><a href="blog.html" class="site-nav__link">Blog</a></li>
+      <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+    </ul>
+
+    <div class="site-nav__actions">
+      <button class="theme-switch" aria-label="Toggle dark mode">
+        <svg class="theme-switch__icon--moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="theme-switch__icon--sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+        </svg>
+      </button>
+      <a href="contact.html" class="btn btn--primary">Book a Call</a>
+
+      <button class="site-nav__toggle" id="mobile-nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg class="site-nav__toggle-icon--hamburger" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+        <svg class="site-nav__toggle-icon--close" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <nav class="mobile-nav__links">
+      <a href="index.html" class="mobile-nav__link"><span class="mobile-nav__index">01</span> Home</a>
+      <a href="about.html" class="mobile-nav__link"><span class="mobile-nav__index">02</span> About</a>
+      <a href="services.html" class="mobile-nav__link"><span class="mobile-nav__index">03</span> Services</a>
+      <a href="portfolio.html" class="mobile-nav__link"><span class="mobile-nav__index">04</span> Portfolio</a>
+      <a href="blog.html" class="mobile-nav__link"><span class="mobile-nav__index">05</span> Blog</a>
+      <a href="contact.html" class="mobile-nav__link"><span class="mobile-nav__index">06</span> Contact</a>
+    </nav>
+    <div class="mobile-nav__footer">
+      <div class="mobile-nav__contact">
+        <a href="tel:+254700000000" class="u-link-underline">+254 700 000 000</a>
+        <a href="mailto:hello@agetasamwel.com" class="u-link-underline">hello@agetasamwel.com</a>
+      </div>
+      <div class="mobile-nav__social">
+        <a href="#" class="mobile-nav__social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+        <a href="#" class="mobile-nav__social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </a>
+      </div>
+      <a href="contact.html" class="btn btn--primary">Book a Call</a>
+    </div>
+  </div>
+
+  <!-- ===========================================================
+       PAGE INTRO
+       Uses the shared .page-intro component (see style.css section 5).
+       =========================================================== -->
+  <section class="page-intro">
+    <div class="container u-reveal">
+      <p class="page-intro__eyebrow">What Ageta Offers</p>
+      <h1 class="page-intro__title">Thoughtful Design, Any Budget</h1>
+      <p class="page-intro__text">
+        Every project — whether a full custom home or a single room
+        renovation — gets the same hands-on attention. Good design
+        shouldn't be reserved for the largest budgets; it should be
+        tailored to yours.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===========================================================
+       SERVICE CARDS (expanded)
+       Reuses the shared .service-card component from Home, with a
+       scoped padding override for this page's longer content
+       (see style.css section 18).
+       =========================================================== -->
+  <section class="service-cards">
+    <div class="container">
+      <div class="service-cards__grid">
+
+        <div class="service-card u-tilt u-reveal u-reveal--delay-1">
+          <p class="service-card__number">01</p>
+          <h2 class="service-card__title">Custom Home Design</h2>
+          <p class="service-card__desc">
+            A home designed entirely around how you live — from the
+            first sketch of the floor plan to the final finishes.
+            Ageta works with you from concept through construction,
+            ensuring every space serves a real purpose in your daily
+            life.
+          </p>
+          <div class="service-card__best-for">
+            <span class="service-card__best-for-label">Best for:</span>
+            <span>Clients building on their own land, ready to start from a blank slate.</span>
+          </div>
+        </div>
+
+        <div class="service-card u-tilt u-reveal u-reveal--delay-2">
+          <p class="service-card__number">02</p>
+          <h2 class="service-card__title">Renovations &amp; Additions</h2>
+          <p class="service-card__desc">
+            Reimagine or expand your existing space without starting
+            from scratch. Whether it's a single room refresh or a full
+            second-floor addition, Ageta designs renovations that
+            respect your home's existing character while solving real
+            space or flow problems.
+          </p>
+          <div class="service-card__best-for">
+            <span class="service-card__best-for-label">Best for:</span>
+            <span>Homeowners who love their location but have outgrown their layout.</span>
+          </div>
+        </div>
+
+        <div class="service-card u-tilt u-reveal u-reveal--delay-1">
+          <p class="service-card__number">03</p>
+          <h2 class="service-card__title">Design Consultation</h2>
+          <p class="service-card__desc">
+            Not ready to commit to a full project? A design consultation
+            gives you expert guidance — reviewing existing plans,
+            advising on layout decisions, or simply helping you
+            understand what's possible before you invest further.
+          </p>
+          <div class="service-card__best-for">
+            <span class="service-card__best-for-label">Best for:</span>
+            <span>Clients early in the process who want expert input before committing.</span>
+          </div>
+        </div>
+
+        <div class="service-card u-tilt u-reveal u-reveal--delay-2">
+          <p class="service-card__number">04</p>
+          <h2 class="service-card__title">Site Planning &amp; Feasibility</h2>
+          <p class="service-card__desc">
+            Own land but not sure what's buildable? Ageta assesses
+            your site's potential — topography, access, budget
+            realities — so you can make informed decisions before
+            design even begins.
+          </p>
+          <div class="service-card__best-for">
+            <span class="service-card__best-for-label">Best for:</span>
+            <span>Landowners who need clarity before starting a project.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================================================
+       FULL PROCESS
+       Uses the shared .timeline component (see style.css section 10).
+       =========================================================== -->
+  <section class="process-full">
+    <div class="container">
+
+      <div class="process-full__header section-header--center u-reveal">
+        <p class="section-header__eyebrow">How It Works</p>
+        <h2 class="section-header__title">The Full Process, Step by Step</h2>
+      </div>
+
+      <div class="timeline__grid">
+        <div class="timeline__step u-reveal u-reveal--delay-1">
+          <div class="timeline__step-number">01</div>
+          <h3 class="timeline__step-title">Consult</h3>
+          <p class="timeline__step-desc">
+            We start with a conversation — your vision, your budget,
+            your site, and how you actually live day to day. This is
+            the foundation everything else is built on.
+          </p>
+        </div>
+        <div class="timeline__step u-reveal u-reveal--delay-2">
+          <div class="timeline__step-number">02</div>
+          <h3 class="timeline__step-title">Design</h3>
+          <p class="timeline__step-desc">
+            Ageta creates a design tailored specifically to you —
+            floor plans, elevations, and material choices reflecting
+            how you'll use every space. You review and refine it
+            together.
+          </p>
+        </div>
+        <div class="timeline__step u-reveal u-reveal--delay-3">
+          <div class="timeline__step-number">03</div>
+          <h3 class="timeline__step-title">Build</h3>
+          <p class="timeline__step-desc">
+            Once approved, Ageta guides construction directly —
+            coordinating with contractors, reviewing progress on-site,
+            and solving problems as they arise.
+          </p>
+        </div>
+        <div class="timeline__step u-reveal u-reveal--delay-4">
+          <div class="timeline__step-number">04</div>
+          <h3 class="timeline__step-title">Move In</h3>
+          <p class="timeline__step-desc">
+            The final walkthrough isn't a formality — it's where every
+            detail is checked against what was promised, before handing
+            you the keys.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===========================================================
+       FAQ ACCORDION
+       Native <details>/<summary> — keyboard and screen-reader
+       accessible by default, with only the chevron rotation driven
+       by CSS (see style.css section 18).
+       =========================================================== -->
+  <section class="faq">
+    <div class="container">
+
+      <div class="faq__header section-header--center u-reveal">
+        <p class="section-header__eyebrow">Common Questions</p>
+        <h2 class="section-header__title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq__list u-reveal">
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            Is Ageta only for high-budget projects?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </summary>
+          <p class="faq-item__answer">
+            Not at all. Every project — regardless of size or budget —
+            gets the same hands-on attention and design care. Ageta
+            works with you to find the best possible outcome within
+            your specific budget.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            I don't know where to start. Is that a problem?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </summary>
+          <p class="faq-item__answer">
+            Not at all — most clients start exactly there. The first
+            consultation is designed to help you figure out what's
+            possible, what you actually need, and how to move forward,
+            even if you're starting with more questions than answers.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            Will Ageta actually listen to what I want, or push his own style?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </summary>
+          <p class="faq-item__answer">
+            Your home should reflect how you live, not a signature
+            style imposed on every project. Ageta's process starts
+            with listening — your input shapes the design from the
+            very first sketch.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            How involved do I need to be during construction?
+            <svg class="faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </summary>
+          <p class="faq-item__answer">
+            As involved as you'd like to be. Ageta manages day-to-day
+            coordination and problem-solving on site, keeping you
+            updated at key milestones — so you're informed without
+            needing to manage contractors yourself.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container u-reveal">
+      <h2 class="cta-banner__title">Ready to Talk Through Your Project?</h2>
+      <p class="cta-banner__subtext">
+        Book a call with Ageta and find out which service fits where
+        you are right now.
+      </p>
+      <a href="contact.html" class="btn btn--inverted">Book a Call</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="site-footer__logo">
+            <span class="site-footer__logo-mark">S.</span><span class="site-footer__logo-name">Ageta</span>
+          </a>
+          <p class="site-footer__tagline">
+            Designing homes with intention across Kenya — guiding clients
+            from first sketch to final key, at any budget.
+          </p>
+        </div>
+        <div>
+          <p class="site-footer__heading">Quick Links</p>
+          <ul class="site-footer__links">
+            <li><a href="index.html" class="site-footer__link u-link-underline">Home</a></li>
+            <li><a href="about.html" class="site-footer__link u-link-underline">About</a></li>
+            <li><a href="services.html" class="site-footer__link u-link-underline">Services</a></li>
+            <li><a href="portfolio.html" class="site-footer__link u-link-underline">Portfolio</a></li>
+            <li><a href="blog.html" class="site-footer__link u-link-underline">Blog</a></li>
+            <li><a href="contact.html" class="site-footer__link u-link-underline">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__heading">Contact</p>
+          <div class="site-footer__contact">
+            <a href="tel:+254700000000" class="u-link-underline">+254 700 000 000</a>
+            <a href="mailto:hello@agetasamwel.com" class="u-link-underline">hello@agetasamwel.com</a>
+            <a href="https://wa.me/254700000000" class="u-link-underline">WhatsApp</a>
+          </div>
+        </div>
+        <div>
+          <p class="site-footer__heading">Follow</p>
+          <div class="site-footer__social">
+            <a href="#" class="site-footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+            <a href="#" class="site-footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="site-footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A5.98 5.98 0 0 1 16 8z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2026 Ageta Samwel. All rights reserved.</p>
+        <p>Nairobi, Kenya</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

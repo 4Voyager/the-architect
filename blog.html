@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Blog — Ageta Samwel, Architect</title>
+<meta name="description" content="Design tips, client stories, and planning guidance from Ageta Samwel, a solo architect designing homes across Kenya." />
+
+<!-- Open Graph + Twitter Card: controls how this page looks when
+     shared on Instagram/Facebook/WhatsApp/Twitter. og:image points
+     to a placeholder filename -- add a real 1200x630px image named
+     exactly "og-image.jpg" next to this HTML file once available. -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ageta Samwel — Architect" />
+<meta property="og:title" content="Blog — Ageta Samwel, Architect" />
+<meta property="og:description" content="Design tips, client stories, and planning guidance from Ageta Samwel, a solo architect designing homes across Kenya." />
+<meta property="og:url" content="https://www.agetasamwel.com/blog.html" />
+<meta property="og:image" content="https://www.agetasamwel.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Blog — Ageta Samwel, Architect" />
+<meta name="twitter:description" content="Design tips, client stories, and planning guidance from Ageta Samwel, a solo architect designing homes across Kenya." />
+<meta name="twitter:image" content="https://www.agetasamwel.com/og-image.jpg" />
+
+<!-- Structured data (Schema.org), identical on every page so
+     search engines and social platforms have one consistent source
+     of truth about the business. PLACEHOLDER VALUES below (domain,
+     phone, email) match the placeholders used elsewhere on the site
+     -- replace with real ones once confirmed. Add a "sameAs" array
+     with real social media URLs once Ageta's handles are confirmed
+     (omitted for now rather than guessed). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Ageta Samwel — Architect",
+  "url": "https://www.agetasamwel.com/",
+  "telephone": "+254700000000",
+  "email": "hello@agetasamwel.com",
+  "description": "Ageta Samwel is a solo, hands-on architect designing homes across Kenya, guiding clients from first sketch to final key at any budget.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "areaServed": "Kenya",
+  "founder": {
+    "@type": "Person",
+    "name": "Ageta Samwel",
+    "jobTitle": "Architect"
+  }
+}
+</script>
+<!-- Font loading: preconnect starts the connection early, then
+     preload downloads the font CSS in parallel with everything else
+     rather than blocking on it. The onload swap applies it once
+     ready; <noscript> covers visitors with JavaScript disabled. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap"></noscript>
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-nav">
+    <a href="index.html" class="site-nav__logo">
+      <span class="site-nav__logo-mark">S.</span><span class="site-nav__logo-name">Ageta</span>
+    </a>
+
+    <ul class="site-nav__links">
+      <li><a href="index.html" class="site-nav__link">Home</a></li>
+      <li><a href="about.html" class="site-nav__link">About</a></li>
+      <li><a href="services.html" class="site-nav__link">Services</a></li>
+      <li><a href="portfolio.html" class="site-nav__link">Portfolio</a></li>
+      <li><a href="blog.html" class="site-nav__link is-current">Blog</a></li>
+      <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+    </ul>
+
+    <div class="site-nav__actions">
+      <button class="theme-switch" aria-label="Toggle dark mode">
+        <svg class="theme-switch__icon--moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="theme-switch__icon--sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+        </svg>
+      </button>
+      <a href="contact.html" class="btn btn--primary">Book a Call</a>
+
+      <button class="site-nav__toggle" id="mobile-nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg class="site-nav__toggle-icon--hamburger" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+        <svg class="site-nav__toggle-icon--close" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <nav class="mobile-nav__links">
+      <a href="index.html" class="mobile-nav__link"><span class="mobile-nav__index">01</span> Home</a>
+      <a href="about.html" class="mobile-nav__link"><span class="mobile-nav__index">02</span> About</a>
+      <a href="services.html" class="mobile-nav__link"><span class="mobile-nav__index">03</span> Services</a>
+      <a href="portfolio.html" class="mobile-nav__link"><span class="mobile-nav__index">04</span> Portfolio</a>
+      <a href="blog.html" class="mobile-nav__link"><span class="mobile-nav__index">05</span> Blog</a>
+      <a href="contact.html" class="mobile-nav__link"><span class="mobile-nav__index">06</span> Contact</a>
+    </nav>
+    <div class="mobile-nav__footer">
+      <div class="mobile-nav__contact">
+        <a href="tel:+254700000000" class="u-link-underline">+254 700 000 000</a>
+        <a href="mailto:hello@agetasamwel.com" class="u-link-underline">hello@agetasamwel.com</a>
+      </div>
+      <div class="mobile-nav__social">
+        <a href="#" class="mobile-nav__social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+        <a href="#" class="mobile-nav__social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </a>
+      </div>
+      <a href="contact.html" class="btn btn--primary">Book a Call</a>
+    </div>
+  </div>
+
+  <!-- ===========================================================
+       PAGE INTRO
+       Uses the shared .page-intro component (see style.css section 5).
+       =========================================================== -->
+  <section class="page-intro">
+    <div class="container u-reveal">
+      <p class="page-intro__eyebrow">The Blog</p>
+      <h1 class="page-intro__title">Notes on Design, Budget &amp; Building</h1>
+      <p class="page-intro__text">
+        Practical guidance and real project stories from Ageta —
+        for anyone thinking about building, renovating, or just
+        figuring out where to start.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===========================================================
+       FILTER BAR
+       Shared component (see style.css section 13 and main.js
+       section 7). Deep-linkable via ?filter= in the URL.
+       =========================================================== -->
+  <div class="filter-bar u-reveal" role="group" aria-label="Filter articles by category">
+    <button class="filter-bar__button" data-filter="all" aria-pressed="true">All</button>
+    <button class="filter-bar__button" data-filter="design-tips" aria-pressed="false">Design Tips</button>
+    <button class="filter-bar__button" data-filter="client-stories" aria-pressed="false">Client Stories</button>
+    <button class="filter-bar__button" data-filter="planning-budgeting" aria-pressed="false">Planning &amp; Budgeting</button>
+  </div>
+
+  <!-- ===========================================================
+       ARTICLE GRID
+       No individual "Read more" links: standalone article pages
+       aren't part of the agreed sitemap yet, so these stay honest
+       previews rather than dead links to pages that don't exist.
+       =========================================================== -->
+  <section class="blog">
+    <div class="container">
+      <div class="u-grid-3" id="filterable-grid">
+
+        <div class="article-card u-tilt u-reveal u-reveal--delay-1" data-category="design-tips">
+          <span class="article-card__category">Design Tips</span>
+          <h2 class="article-card__title">5 Ways to Make a Small Space Feel Bigger</h2>
+          <p class="article-card__excerpt">
+            Smart layout choices and light placement can make a
+            modest room feel twice its size — no renovation required.
+          </p>
+          <p class="article-card__meta">Coming Soon · 4 min read</p>
+        </div>
+
+        <div class="article-card u-tilt u-reveal u-reveal--delay-2" data-category="design-tips">
+          <span class="article-card__category">Design Tips</span>
+          <h2 class="article-card__title">Why Natural Light Should Drive Your Floor Plan</h2>
+          <p class="article-card__excerpt">
+            Where the sun falls throughout the day should shape your
+            layout long before finishes and furniture come into play.
+          </p>
+          <p class="article-card__meta">Coming Soon · 5 min read</p>
+        </div>
+
+        <div class="article-card u-tilt u-reveal u-reveal--delay-3" data-category="client-stories">
+          <span class="article-card__category">Client Stories</span>
+          <h2 class="article-card__title">From Empty Lot to Family Home: A Nakuru Story</h2>
+          <p class="article-card__excerpt">
+            A look at how one family's blank plot of land became a
+            home built entirely around how they actually live.
+          </p>
+          <p class="article-card__meta">Coming Soon · 6 min read</p>
+        </div>
+
+        <div class="article-card u-tilt u-reveal u-reveal--delay-4" data-category="client-stories">
+          <span class="article-card__category">Client Stories</span>
+          <h2 class="article-card__title">How One Renovation Solved a Decade of Space Problems</h2>
+          <p class="article-card__excerpt">
+            A single-room addition changed how this family had used
+            their home for ten years — here's how it came together.
+          </p>
+          <p class="article-card__meta">Coming Soon · 5 min read</p>
+        </div>
+
+        <div class="article-card u-tilt u-reveal u-reveal--delay-5" data-category="planning-budgeting">
+          <span class="article-card__category">Planning &amp; Budgeting</span>
+          <h2 class="article-card__title">What Does It Really Cost to Build a House in Kenya?</h2>
+          <p class="article-card__excerpt">
+            A realistic breakdown of where your budget goes — and
+            where there's room to make smart trade-offs.
+          </p>
+          <p class="article-card__meta">Coming Soon · 7 min read</p>
+        </div>
+
+        <div class="article-card u-tilt u-reveal u-reveal--delay-6" data-category="planning-budgeting">
+          <span class="article-card__category">Planning &amp; Budgeting</span>
+          <h2 class="article-card__title">Site Feasibility 101: What to Check Before You Buy Land</h2>
+          <p class="article-card__excerpt">
+            The questions worth answering before you commit to a
+            plot — so your dream site doesn't become a costly surprise.
+          </p>
+          <p class="article-card__meta">Coming Soon · 6 min read</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container u-reveal">
+      <h2 class="cta-banner__title">Have a Project in Mind?</h2>
+      <p class="cta-banner__subtext">
+        Book a call with Ageta and start turning your ideas into a
+        real plan.
+      </p>
+      <a href="contact.html" class="btn btn--inverted">Book a Call</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="site-footer__logo">
+            <span class="site-footer__logo-mark">S.</span><span class="site-footer__logo-name">Ageta</span>
+          </a>
+          <p class="site-footer__tagline">
+            Designing homes with intention across Kenya — guiding clients
+            from first sketch to final key, at any budget.
+          </p>
+        </div>
+        <div>
+          <p class="site-footer__heading">Quick Links</p>
+          <ul class="site-footer__links">
+            <li><a href="index.html" class="site-footer__link u-link-underline">Home</a></li>
+            <li><a href="about.html" class="site-footer__link u-link-underline">About</a></li>
+            <li><a href="services.html" class="site-footer__link u-link-underline">Services</a></li>
+            <li><a href="portfolio.html" class="site-footer__link u-link-underline">Portfolio</a></li>
+            <li><a href="blog.html" class="site-footer__link u-link-underline">Blog</a></li>
+            <li><a href="contact.html" class="site-footer__link u-link-underline">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__heading">Contact</p>
+          <div class="site-footer__contact">
+            <a href="tel:+254700000000" class="u-link-underline">+254 700 000 000</a>
+            <a href="mailto:hello@agetasamwel.com" class="u-link-underline">hello@agetasamwel.com</a>
+            <a href="https://wa.me/254700000000" class="u-link-underline">WhatsApp</a>
+          </div>
+        </div>
+        <div>
+          <p class="site-footer__heading">Follow</p>
+          <div class="site-footer__social">
+            <a href="#" class="site-footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+            <a href="#" class="site-footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="site-footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A5.98 5.98 0 0 1 16 8z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2026 Ageta Samwel. All rights reserved.</p>
+        <p>Nairobi, Kenya</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
